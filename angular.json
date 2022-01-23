@@ -98,6 +98,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "coffee-shop-online:build:production",
+            "firebaseProject": "coffee-shop-385a5",
+            "firebaseHostingSite": "coffee-shop-385a5"
+          }
         }
       }
     }

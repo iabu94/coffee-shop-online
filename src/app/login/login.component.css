@@ -1,0 +1,35 @@
+.login {
+  margin-top: 10rem;
+}
+
+.row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--bg);
+  border: var(--border);
+  max-width: 400px;
+}
+
+.ml-h-400 {
+  margin-left: calc((100vw - 400px) / 2);
+}
+.ml-h-160 {
+  margin-left: calc((100vw - 160px) / 2);
+}
+
+.row form .inputBox span {
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.row form .inputBox input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+}

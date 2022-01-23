@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "coffee-shop-385a5": {
+      "hosting": {
+        "coffee-shop-online": [
+          "coffee-shop-385a5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "coffee-shop-385a5"
+  }
+}

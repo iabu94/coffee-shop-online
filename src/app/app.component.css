@@ -1,0 +1,14 @@
+:host {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "body";
+  grid-template-rows: max-content 1fr;
+}
+
+app-header {
+  grid-area: header;
+}
+.routing-elements {
+  grid-area: body;
+}
