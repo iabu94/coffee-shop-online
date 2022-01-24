@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { RatingPipe } from './pipes/rating.pipe';
 import { ProductsComponent } from './products/products.component';
+import { CollectionComponent } from './collection/collection.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProductsComponent } from './products/products.component';
     RatingPipe,
     ContactUsComponent,
     LoginComponent,
+    CollectionComponent,
   ],
   imports: [
     BrowserModule,
