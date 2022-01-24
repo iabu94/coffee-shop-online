@@ -2,7 +2,7 @@
   margin-top: 10rem;
 }
 
-.row form .inputBox {
+.row .inputBox {
   display: flex;
   align-items: center;
   margin-top: 2rem;
@@ -12,24 +12,29 @@
   max-width: 400px;
 }
 
-.ml-h-400 {
-  margin-left: calc((100vw - 400px) / 2);
-}
-.ml-h-160 {
-  margin-left: calc((100vw - 160px) / 2);
-}
-
-.row form .inputBox span {
+.row .inputBox span {
   color: #fff;
   font-size: 2rem;
   padding-left: 2rem;
 }
 
-.row form .inputBox input {
+.row .inputBox input {
   width: 100%;
   padding: 2rem;
   font-size: 1.7rem;
   color: #fff;
   text-transform: none;
   background: none;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

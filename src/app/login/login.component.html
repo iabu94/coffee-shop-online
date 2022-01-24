@@ -1,16 +1,17 @@
 <div class="login">
     <h1 class="heading">LOGIN</h1>
     <div class="row">
-        <form action="">
+        <form [formGroup]="loginForm" (ngSubmit)="login()" autocomplete="off">
             <div class="inputBox ml-h-400">
                 <span class="fas fa-user"></span>
-                <input type="text" placeholder="username">
+                <input formControlName="username" type="text" placeholder="username">
             </div>
             <div class="inputBox ml-h-400">
                 <span class="fas fa-user"></span>
-                <input type="text" placeholder="password">
+                <input formControlName="password" type="password" placeholder="password">
             </div>
-            <input type="submit" value="contact now" class="btn ml-h-160">
+            <div class="error-message" *ngIf="!loginSuccess">Username or password incorrect.</div>
+            <button type="submit" class="btn ml-h-160">Login</button>
         </form>
     </div>
 </div>

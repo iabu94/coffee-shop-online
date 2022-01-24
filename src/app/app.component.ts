@@ -14,8 +14,8 @@ export class AppComponent {
   products$: Observable<Product[]>;
 
   constructor(firestore: Firestore) {
-    const collection1 = collection(firestore, 'products');
-    this.products$ = collectionData(collection1) as Observable<Product[]>;
-    this.products$.subscribe((data) => console.log(data));
+    this.products$ = collectionData(
+      collection(firestore, 'products')
+    ) as Observable<Product[]>;
   }
 }
