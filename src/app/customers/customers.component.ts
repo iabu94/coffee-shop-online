@@ -6,6 +6,7 @@ import {
   doc,
   Firestore,
 } from '@angular/fire/firestore';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Customer } from '../models/customer';
 
@@ -17,7 +18,7 @@ import { Customer } from '../models/customer';
 export class CustomersComponent implements OnInit {
   customers$: Observable<Customer[]>;
 
-  constructor(private firestore: Firestore) {
+  constructor(private firestore: Firestore, private router: Router) {
     this.customers$ = collectionData(collection(firestore, 'customers'), {
       idField: 'id',
     }) as Observable<Customer[]>;
@@ -28,5 +29,9 @@ export class CustomersComponent implements OnInit {
   deleteCustomer(id: string) {
     const customerRef = doc(this.firestore, 'customers', id);
     deleteDoc(customerRef).then(() => console.log('success'));
+  }
+
+  editCustomer(id: string) {
+    this.router.navigateByUrl(`edit-customer/${id}`);
   }
 }
