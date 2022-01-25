@@ -1,0 +1,22 @@
+<div class="add-customer">
+    <form autocomplete="off" [formGroup]="customerForm" (ngSubmit)="create()">
+        <h1>Add Customer</h1>
+        <div class="firstName input-box">
+            <label for="firstName">First Name</label> <br>
+            <input name="firstName" type="text" formControlName="firstName">
+        </div>
+        <div class="lastName input-box">
+            <label for="lastName">Last Name</label> <br>
+            <input name="lastName" type="text" formControlName="lastName">
+        </div>
+        <div class="username input-box">
+            <label for="username">Username</label> <br>
+            <input name="username" type="text" formControlName="username">
+        </div>
+        <div class="password input-box">
+            <label for="password">Password</label> <br>
+            <input name="password" type="password" formControlName="password">
+        </div>
+        <button type="submit" class="btn-submit">Create</button>
+    </form>
+</div>

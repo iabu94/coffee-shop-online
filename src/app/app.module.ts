@@ -14,6 +14,8 @@ import { RatingPipe } from './pipes/rating.pipe';
 import { ProductsComponent } from './products/products.component';
 import { CollectionComponent } from './collection/collection.component';
 import { FooterComponent } from './footer/footer.component';
+import { CustomersComponent } from './customers/customers.component';
+import { AddCustomerComponent } from './add-customer/add-customer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     CollectionComponent,
     FooterComponent,
+    CustomersComponent,
+    AddCustomerComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,22 @@
+.add-customer {
+  margin-top: 10rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+label,
+input,
+button {
+  font-size: 2rem;
+}
+
+.input-box {
+  margin: 10px;
+}
+
+.btn-submit {
+  padding: 10px;
+  cursor: pointer;
+}

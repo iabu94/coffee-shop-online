@@ -49,7 +49,7 @@ export class LoginComponent implements OnInit {
         if (!!customer) {
           this.loginSuccess = true;
           localStorage.setItem('customer', customer.firstName);
-          this.router.navigateByUrl('');
+          this.router.navigateByUrl('/customers');
         } else {
           this.loginSuccess = false;
         }
