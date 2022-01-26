@@ -5,14 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    projectId: 'coffee-shop-385a5',
-    appId: '1:45047380208:web:6782e9c04c3964b8acaa35',
-    storageBucket: 'coffee-shop-385a5.appspot.com',
-    locationId: 'us-central',
-    apiKey: 'AIzaSyBRs5IMuDSBmaXV8Mau-9kcrklUwPEDDaY',
-    authDomain: 'coffee-shop-385a5.firebaseapp.com',
-    messagingSenderId: '45047380208',
-    measurementId: 'G-H9MNLC9E84',
+    apiKey: 'AIzaSyBhVDOr57UdVI43ltDPFfPMjBf9Lsa2y90',
+    authDomain: 'coffee-shop-68531.firebaseapp.com',
+    projectId: 'coffee-shop-68531',
+    storageBucket: 'coffee-shop-68531.appspot.com',
+    messagingSenderId: '531992980008',
+    appId: '1:531992980008:web:933fbe0ca8e7ab8cd5631d',
+    measurementId: 'G-B66FSTKWYD',
   },
 };
 
